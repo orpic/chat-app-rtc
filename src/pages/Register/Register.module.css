@@ -1,0 +1,26 @@
+.formContainer {
+  background-color: #25d366;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formWrapper {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: #199f4a;
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
