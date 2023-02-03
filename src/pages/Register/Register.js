@@ -2,6 +2,8 @@ import React from "react";
 
 import styles from "./Register.module.css";
 
+import { images } from "../../images";
+
 const Register = () => {
   return (
     <div className={styles.formContainer}>
@@ -14,8 +16,8 @@ const Register = () => {
           <input type="password" placeholder="Password" />
           <input type="file" id="file" style={{ display: "none" }} />
           <label htmlFor="file">
-            <img src="" />
-            ded
+            <img src={images.addAvatar} alt="add" />
+            <span>Add an avataar</span>
           </label>
           <button>Sign Up</button>
         </form>

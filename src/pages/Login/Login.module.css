@@ -55,19 +55,6 @@ button {
   cursor: pointer;
 }
 
-label {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: #199f4a;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-label img {
-  width: 3.2rem;
-}
-
 p {
   color: #777;
   font-size: 1.2rem;
