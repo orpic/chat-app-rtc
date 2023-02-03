@@ -1,7 +1,13 @@
 import React from "react";
 
+import { Register } from "./pages";
+
 function App() {
-  return <div>APp</div>;
+  return (
+    <div>
+      <Register />
+    </div>
+  );
 }
 
 export default App;
