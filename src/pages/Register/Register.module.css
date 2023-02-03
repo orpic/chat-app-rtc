@@ -8,7 +8,7 @@
 
 .formWrapper {
   background-color: #fff;
-  padding: 2rem 3rem;
+  padding: 3rem 5rem;
   border-radius: 9px;
   display: flex;
   flex-direction: column;
@@ -17,10 +17,46 @@
 
 .logo {
   color: #199f4a;
+  font-weight: 500;
+  font-size: 2.6rem;
+}
+
+.title {
+  color: #199f4a;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 1rem 0;
 }
 
 .formWrapper form {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 2.4rem;
+}
+
+form input {
+  padding: 1.2rem;
+  border: none;
+  width: 25rem;
+  border-bottom: 1px solid #199f4a;
+}
+
+form input::placeholder {
+  color: rgb(175, 175, 175);
+}
+
+button {
+  border: none;
+  background-color: #199f4a;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+p {
+  color: #777;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
