@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Chat.module.css";
 
 import { images } from "../../images";
+import { Input, Messages } from "../../components";
 
 const Chat = () => {
   return (
@@ -15,6 +16,8 @@ const Chat = () => {
           <img src={images.more} alt="more" />
         </div>
       </div>
+      <Messages />
+      <Input />
     </div>
   );
 };
