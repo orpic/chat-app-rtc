@@ -45,7 +45,7 @@ form input::placeholder {
   color: rgb(175, 175, 175);
 }
 
-button {
+.button {
   border: none;
   background-color: #199f4a;
   padding: 1.2rem;
@@ -55,7 +55,7 @@ button {
   cursor: pointer;
 }
 
-label {
+.label {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -64,11 +64,11 @@ label {
   cursor: pointer;
 }
 
-label img {
+.label img {
   width: 3.2rem;
 }
 
-p {
+.p {
   color: #777;
   font-size: 1.2rem;
   margin-top: 1rem;

@@ -45,7 +45,7 @@ form input::placeholder {
   color: rgb(175, 175, 175);
 }
 
-button {
+.button {
   border: none;
   background-color: #199f4a;
   padding: 1.2rem;

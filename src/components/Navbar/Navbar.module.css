@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #0c8137;
+  height: 50px;
+  padding: 1rem;
+  justify-content: space-between;
+  color: #ddddf7;
+  font-size: 1.6rem;
+}
+
+.logo {
+  font-weight: 500;
+}
+
+.img {
+  background-color: #0c8137;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  background-color: #ddddf7;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.4rem;
+}

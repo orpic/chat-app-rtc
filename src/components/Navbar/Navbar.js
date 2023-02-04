@@ -7,9 +7,9 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <span className={styles.logo}>Chat APP</span>
       <div className={styles.user}>
-        <img src="" alt="im" />
+        <img className={styles.img} src="" alt="im" />
         <span>Name</span>
-        <button>logout</button>
+        <button className={styles.button}>logout</button>
       </div>
     </div>
   );

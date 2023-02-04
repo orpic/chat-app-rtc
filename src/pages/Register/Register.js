@@ -15,13 +15,13 @@ const Register = () => {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="file" id="file" style={{ display: "none" }} />
-          <label htmlFor="file">
+          <label className={styles.label} htmlFor="file">
             <img src={images.addAvatar} alt="add" />
             <span>Add an avataar</span>
           </label>
-          <button>Sign Up</button>
+          <button className={styles.button}>Sign Up</button>
         </form>
-        <p>Have an account? Log In </p>
+        <p className={styles.p}>Have an account? Log In </p>
       </div>
     </div>
   );
