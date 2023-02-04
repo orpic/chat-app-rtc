@@ -38,7 +38,23 @@ form input {
   padding: 1.2rem 1.2rem 0.6rem 1.2rem;
   border: none;
   width: 25rem;
-  border-bottom: 1px solid #199f4a;
+  box-shadow: 0 1px 0 0 #199f4a;
+  /* border-bottom: 1px solid #199f4a; */
+  outline: none;
+  transition: all 0.3s;
+}
+
+form input:focus {
+  /* border-bottom: 1px #199f4a; */
+  box-shadow: 0 3px 0 0 #199f4a;
+}
+
+form input:focus:hover {
+  box-shadow: 0 3px 0 0 #199f4a;
+}
+
+form input:hover {
+  box-shadow: 0 2px 0 0 #199f4a;
 }
 
 form input::placeholder {
