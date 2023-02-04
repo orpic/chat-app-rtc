@@ -1,0 +1,27 @@
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d6ffc9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #199f4a;
+  border-radius: 9px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.messages {
+  background-color: #d6ffc9;
+  padding: 1rem;
+  height: calc(80vh - 120px);
+  overflow-y: auto;
+}

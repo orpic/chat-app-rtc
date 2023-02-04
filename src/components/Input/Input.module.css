@@ -1,0 +1,49 @@
+.input {
+  height: 60px;
+  background-color: #fff;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+
+  outline: none;
+  font-size: 1.8rem;
+  color: gray;
+}
+
+.input input::placeholder {
+  color: lightgray;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.send img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  background-color: #199f4a;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #2db15d;
+}
