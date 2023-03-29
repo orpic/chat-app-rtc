@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./Register.module.css";
 
@@ -8,6 +8,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 
 const Register = () => {
+  const [error, setError] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const displayName = e.target[0].value;
@@ -15,7 +16,11 @@ const Register = () => {
     const password = e.target[2].value;
     const file = e.target[3].files[0];
 
-    const res = createUserWithEmailAndPassword(auth, email, password);
+    try {
+      const res = createUserWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      setError(true);
+    }
   };
 
   return (
@@ -33,6 +38,7 @@ const Register = () => {
             <span>Add a profile picture</span>
           </label>
           <button className={styles.button}>Sign Up</button>
+          {error && <span>Something went wrong</span>}
         </form>
         <p className={styles.p}>Have an account? Log In </p>
       </div>
