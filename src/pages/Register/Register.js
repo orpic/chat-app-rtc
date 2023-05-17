@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import styles from "./Register.module.css";
 
 import { images } from "../../images";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
-import { auth } from "../../firebase";
+import { auth, storage } from "../../firebase";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 const Register = () => {
   const [error, setError] = useState(false);
@@ -18,6 +19,24 @@ const Register = () => {
 
     try {
       const res = createUserWithEmailAndPassword(auth, email, password);
+
+      const storageRef = ref(storage, displayName);
+
+      const uploadTask = uploadBytesResumable(storageRef, file);
+
+      uploadTask.on(
+        (error) => {
+          setError(true);
+        },
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+            await updateProfile((await res).user, {
+              displayName,
+              photoURL: downloadURL,
+            });
+          });
+        }
+      );
     } catch (error) {
       setError(true);
     }
